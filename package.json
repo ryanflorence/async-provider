@@ -1,6 +1,6 @@
 {
   "name": "@ryanflorence/async-provider",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A lightweight, type-safe async context management system for JavaScript applications",
   "author": "Ryan Florence <rpflorence@gmail.com>",
   "repository": {
