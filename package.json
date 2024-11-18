@@ -1,0 +1,35 @@
+{
+  "name": "@ryanflorence/async-provider",
+  "version": "0.0.0",
+  "description": "A lightweight, type-safe async context management system for JavaScript applications",
+  "author": "Ryan Florence <rpflorence@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanflorence/async-provider.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/async-provider.js",
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.4.1",
+    "prettier": "^3.3.3",
+    "tsimp": "^2.0.11",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.lib.json",
+    "test": "node --import tsimp/import --test ./src/**/*.spec.ts",
+    "test:watch": "node --import tsimp/import --test --watch ./src/**/*.spec.ts",
+    "prepare": "pnpm run build",
+    "version": "node scripts/version.js"
+  },
+  "packageManager": "pnpm@9.7.1"
+}
